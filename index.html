@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalles ショップ</title>
+  <title>Kalles Shop</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -15,26 +15,26 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-content">
-          <!-- モバイルメニューボタン -->
+          <!-- Mobile Menu Button -->
           <button class="mobile-menu-button" id="menuButton">
             <i data-lucide="menu"></i>
           </button>
 
-          <!-- ロゴ -->
+          <!-- Logo -->
           <div class="logo">
             <h1><a href="index.html">KALLES</a></h1>
           </div>
 
-          <!-- デスクトップナビゲーション -->
+          <!-- Desktop Navigation -->
           <div class="desktop-nav">
-            <a href="index.html">ホーム</a>
-            <a href="contact.html">お問い合わせ</a>
-            <a href="privacy.html">プライバシー</a>
-            <a href="terms.html">利用規約</a>
-            <a href="#aboutSection">私たちについて</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="#aboutSection">About Us</a>
           </div>
 
-          <!-- アイコン -->
+          <!-- Icons -->
           <div class="nav-icons">
             <button class="cart-button">  
               <a href="index.html#productSection"><i data-lucide="shopping-cart"></i></a>
@@ -43,165 +43,164 @@
         </div>
       </div>
 
-      <!-- モバイルメニュー -->
+      <!-- Mobile Menu -->
       <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-content">
-          <a href="index.html">ホーム</a>
-          <a href="contact.html">お問い合わせ</a>
-          <a href="privacy.html">プライバシー</a>
-          <a href="terms.html">利用規約</a>
-          <a href="about.html">私たちについて</a>
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="about.html">About Us</a>
         </div>
       </div>
     </nav>
 
-    <!-- ヒーローセクション -->
+    <!-- Hero Section -->
     <div class="hero">
       <div class="hero-content">
         <div class="hero-text">
-          <h2>ワークアウトを向上させよう</h2>
-          <p>強度、持久力、回復に特化した高品質なフィットネスギアを発見</p>
+          <h2>Enhance Your Workout</h2>
+          <p>Discover High-Quality Fitness Gear Designed for Strength, Endurance, and Recovery</p>
           <button class="shop-now-btn">
-            <a href="#productSection">今すぐ購入</a>
+            <a href="#productSection">Shop Now</a>
           </button>
         </div>
       </div>
     </div>
   </div>
-  <body>
       
-    <!-- アニメーションパターン -->
+    <!-- Animated Pattern -->
     <div class="animated-pattern">
       <div class="pattern-grid"></div>
     </div>
   </div>
 
-  <!-- トレンドセクション -->
+  <!-- Trending Section -->
   <section class="trending-section" id="productSection">
     <div class="header">
-      <h2>今人気の商品</h2>
-      <p>私たちの人気商品をチェック</p>
+      <h2>Trending Products</h2>
+      <p>Check Out Our Popular Products</p>
     </div>
 
     <div class="products-grid" id="productsGrid"></div>
   </section>
 
-  <!-- クイックビューモーダル -->
+  <!-- Quick View Modal -->
   <div id="quickViewModal" class="modal">
     <div class="modal-content">
       <div class="modal-grid">
-        <!-- コンテンツは動的に挿入されます -->
+        <!-- Content will be dynamically inserted here -->
       </div>
     </div>
   </div>
 
-  <!-- サンキューページ -->
+  <!-- Thank You Page -->
   <div id="thankYouPage" class="thank-you-page hidden">
     <div class="thank-you-content">
       <div class="success-icon">✓</div>
-      <h1>ご購入ありがとうございます！</h1>
-      <p>注文が正常に完了しました。注文詳細を記載したメールをすぐにお送りします。</p>
-      <button onclick="goBack()" class="back-button">← ショッピングを続ける</button>
+      <h1>Thank You For Your Purchase!</h1>
+      <p>Your Order Has Been Successfully Processed. You Will Receive An Email With The Order Details Shortly.</p>
+      <button onclick="goBack()" class="back-button">← Continue Shopping</button>
     </div>
   </div>
 
-  <!-- アバウトセクション -->
+  <!-- About Section -->
   <main class="container" id="aboutSection">
     <div class="about-page">
       <header class="page-header">
-        <h1>Kalles ストアについて</h1>
-        <p>高品質なジム機器を提供するワンストップショップ。耐久性と革新性のある製品でフィットネス目標を達成しましょう。</p>
+        <h1>About Kalles Store</h1>
+        <p>Your One-Stop Shop For High-Quality Gym Equipment. Achieve Your Fitness Goals With Durable And Innovative Products.</p>
       </header>
 
       <section class="story-section">
         <div class="story-image">
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="私たちのストーリー">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Our Story">
         </div>
         <div class="story-content">
-          <h2>私たちのストーリー</h2>
-          <p>2020年に設立されたKallesストアは、フィットネス愛好家やプロフェッショナルに最高品質のワークアウト機器を提供することを使命としています。ホームジムから商業施設まで、筋力トレーニング、カーディオ、回復に特化した幅広い製品を提供しています。</p>
-          <p>私たちは耐久性、革新性、顧客満足に焦点を当てています。激しいワークアウトに耐えるプレミアム素材を使用し、ユーザーが限界を超えるのをサポートします。初心者からプロアスリートまで、Kallesストアはあなたのフィットネスジャーニーをサポートします。</p>
+          <h2>Our Story</h2>
+          <p>Founded In 2020, Kalles Store Is Dedicated To Providing Fitness Enthusiasts And Professionals With The Highest Quality Workout Equipment. From Home Gyms To Commercial Facilities, We Offer A Wide Range Of Products Designed For Strength Training, Cardio, And Recovery.</p>
+          <p>We Focus On Durability, Innovation, And Customer Satisfaction. Our Premium Materials Are Built To Withstand Intense Workouts, Helping Users Push Their Limits. Whether You're A Beginner Or A Pro Athlete, Kalles Store Supports Your Fitness Journey.</p>
         </div>
       </section>
 
       <section class="values-section">
-        <h2 class="about-heading">私たちの価値観</h2>
+        <h2 class="about-heading">Our Values</h2>
         <div class="values-grid">
           <div class="value-card">
             <i data-lucide="users"></i>
-            <h3>顧客第一</h3>
-            <p>お客様の満足が最優先です</p>
+            <h3>Customer First</h3>
+            <p>Your Satisfaction Is Our Priority</p>
           </div>
           <div class="value-card">
             <i data-lucide="shopping-bag"></i>
-            <h3>高品質な製品</h3>
-            <p>厳選されたプレミアムアイテム</p>
+            <h3>High-Quality Products</h3>
+            <p>Curated Premium Items</p>
           </div>
           <div class="value-card">
             <i data-lucide="award"></i>
-            <h3>卓越性</h3>
-            <p>最高基準にコミット</p>
+            <h3>Excellence</h3>
+            <p>Committed To The Highest Standards</p>
           </div>
           <div class="value-card">
             <i data-lucide="heart"></i>
-            <h3>コミュニティ</h3>
-            <p>永続的な関係を構築</p>
+            <h3>Community</h3>
+            <p>Building Lasting Relationships</p>
           </div>
         </div>
       </section>
 
       <section class="team-section">
-        <h2 class="about-heading">リーダーシップチーム</h2>
+        <h2 class="about-heading">Leadership Team</h2>
         <div class="team-grid">
           <div class="team-member">
             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="CEO">
-            <h3>ジョン・スミス</h3>
-            <p>CEO & 創業者</p>
+            <h3>John Smith</h3>
+            <p>CEO & Founder</p>
           </div>
           <div class="team-member">
             <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="COO">
-            <h3>サラ・ジョンソン</h3>
-            <p>最高執行責任者</p>
+            <h3>Sarah Johnson</h3>
+            <p>Chief Operating Officer</p>
           </div>
           <div class="team-member">
             <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="CTO">
-            <h3>マイケル・チェン</h3>
-            <p>最高技術責任者</p>
+            <h3>Michael Chen</h3>
+            <p>Chief Technology Officer</p>
           </div>
         </div>
       </section>
     </div>
   </main>
 
-  <!-- フッター -->
+  <!-- Footer -->
   <footer class="footer">
-    <!-- ニュースレターセクション -->
+    <!-- Newsletter Section -->
     <div class="newsletter">
       <div class="container">
         <div class="newsletter-content">
-          <h3>ニュースレター登録</h3>
-          <p>ニュースレターに登録して、特別なオファーや新商品情報をいち早く受け取りましょう！</p>
+          <h3>Subscribe To Our Newsletter</h3>
+          <p>Sign Up To Receive Exclusive Offers And Be The First To Know About New Products!</p>
           <form id="newsletter-form" class="newsletter-form">
             <div class="input-wrapper">
-              <input type="email" placeholder="メールアドレスを入力" required>
+              <input type="email" placeholder="Enter Your Email" required>
             </div>
-            <button type="submit">登録</button>
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>
     </div>
 
-    <!-- メインフッターコンテンツ -->
+    <!-- Main Footer Content -->
     <div class="footer-content">
       <div class="container">
         <div class="footer-grid">
-          <!-- ストア情報 -->
+          <!-- Store Information -->
           <div class="footer-column">
-            <h3>ストア情報</h3>
+            <h3>Store Information</h3>
             <div class="store-info">
               <div class="info-item">
                 <i data-lucide="map-pin"></i>
-                <p>123 ファッションストリート,<br>デザインアベニュー, CA 90210</p>
+                <p>123 Fashion Street,<br>Design Avenue, CA 90210</p>
               </div>
               <div class="info-item">
                 <i data-lucide="phone"></i>
@@ -213,35 +212,35 @@
               </div>
               <div class="info-item">
                 <i data-lucide="clock"></i>
-                <p>月〜日 / 9:00 AM - 8:00 PM</p>
+                <p>Mon - Sun / 9:00 AM - 8:00 PM</p>
               </div>
             </div>
           </div>
 
-          <!-- ヘルプ＆情報 -->
+          <!-- Help & Information -->
           <div class="footer-column">
-            <h3>ヘルプ＆情報</h3>
+            <h3>Help & Information</h3>
             <ul>
-              <li><a href="#aboutSection">私たちについて</a></li>
-              <li><a href="contact.html">お問い合わせ</a></li>
-              <li><a href="terms.html">利用規約</a></li>
-              <li><a href="privacy.html">プライバシーポリシー</a></li>
+              <li><a href="#aboutSection">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
             </ul>
           </div>
 
-          <!-- クイックリンク -->
+          <!-- Quick Links -->
           <div class="footer-column">
-            <h3>クイックリンク</h3>
+            <h3>Quick Links</h3>
             <ul>
-              <li><a href="index.html">ホーム</a></li>
-              <li><a href="index.html#productSection">商品コレクション</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#productSection">Product Collection</a></li>
             </ul>
           </div>
 
-          <!-- ソーシャルメディア -->
+          <!-- Social Media -->
           <div class="footer-column">
-            <h3>ソーシャルメディア</h3>
-            <p>特別なオファーや新商品情報をフォローしてチェックしましょう。</p>
+            <h3>Social Media</h3>
+            <p>Follow Us For Exclusive Offers And New Product Updates.</p>
             <div class="social-links">
               <a href="#" class="social-icon"><i data-lucide="facebook"></i></a>
               <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
@@ -251,16 +250,16 @@
           </div>
         </div>
 
-        <!-- ボトムセクション -->
+        <!-- Bottom Section -->
         <div class="footer-bottom">
-          <p>© <span id="current-year"></span> Your Store. 全著作権所有。</p>
+          <p>© <span id="current-year"></span> Kalles. All Rights Reserved.</p>
         </div>
       </div>
     </div>
   </footer>
 
   <script src="products.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
   <script src="main.js"></script>
 </body>
 </html>

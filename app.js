@@ -21,7 +21,7 @@ if (typeof products === 'undefined' || !products.trending_products) {
                 <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7Z"></path>
                 <circle cx="12" cy="12" r="3"></circle>
               </svg>
-              クイックビュー
+              Buy Now
             </button>
           </div>
         </div>

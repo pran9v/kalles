@@ -17,7 +17,7 @@ if (product) {
       <div class="thumbnail-grid">
         ${product.images.map((image, index) => `
           <div class="thumbnail ${index === 0 ? 'active' : ''}" onclick="updateMainImage(${index})">
-            <img src="${image}" alt="${product.title} ビュー ${index + 1}">
+            <img src="${image}" alt="${product.title} View ${index + 1}">
           </div>
         `).join('')}
       </div>
@@ -25,9 +25,9 @@ if (product) {
     <div class="product-details">
       <h2 class="text-2xl font-bold mb-2">${product.title}</h2>
       <div class="price-container" style="justify-content: flex-start">
-        <span class="price">¥${product.price.toFixed(2)}</span>
+        <span class="price">$${product.price.toFixed(2)}</span>
         ${product.comparePrice ? `
-          <span class="compare-price">¥${product.comparePrice.toFixed(2)}</span>
+          <span class="compare-price">$${product.comparePrice.toFixed(2)}</span>
         ` : ''}
       </div>
       
@@ -38,7 +38,7 @@ if (product) {
       </div>
 
       <div class="quantity-selector">
-        <span>数量:</span>
+        <span>Quantity:</span>
         <div class="quantity-controls">
           <button class="quantity-btn" onclick="updateQuantity(-1)">−</button>
           <span class="quantity-display">1</span>
@@ -57,7 +57,7 @@ if (product) {
           <circle cx="20" cy="21" r="1"></circle>
           <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
         </svg>
-        ${product.inStock ? 'カートに追加' : '在庫切れ'}
+        ${product.inStock ? 'Add to Cart' : 'Out of Stock'}
       </button>
 
       <div class="product-meta">
@@ -66,21 +66,21 @@ if (product) {
           <span class="meta-value">${product.sku}</span>
         </div>
         <div class="meta-item">
-          <span class="meta-label">在庫状況:</span>
+          <span class="meta-label">Stock Status:</span>
           <span class="meta-value ${product.inStock ? 'in-stock' : 'out-of-stock'}">
-            ${product.inStock ? '在庫あり' : '在庫切れ'}
+            ${product.inStock ? 'In Stock' : 'Out of Stock'}
           </span>
         </div>
         <div class="meta-item">
-          <span class="meta-label">販売者:</span>
+          <span class="meta-label">Vendor:</span>
           <span class="meta-value">${product.vendor}</span>
         </div>
         <div class="meta-item">
-          <span class="meta-label">材質:</span>
+          <span class="meta-label">Material:</span>
           <span class="meta-value">${product.material}</span>
         </div>
         <div class="meta-item">
-          <span class="meta-label">カテゴリ:</span>
+          <span class="meta-label">Categories:</span>
           <span class="meta-value">${product.categories.join(', ')}</span>
         </div>
       </div>
@@ -89,7 +89,7 @@ if (product) {
 
   productDetailsContent.innerHTML = productDetailsHTML;
 } else {
-  productDetailsContent.innerHTML = '<p>商品が見つかりません。</p>';
+  productDetailsContent.innerHTML = '<p>Product not found.</p>';
 }
 
 function updateMainImage(index) {
@@ -114,6 +114,6 @@ function updateQuantity(change) {
 function addToCart() {
   if (products && product.inStock) {
     // Add to cart logic here
-    alert('商品がカートに追加されました！');
+    alert('Product added to cart!');
   }
 }
