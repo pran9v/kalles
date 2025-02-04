@@ -843,6 +843,7 @@ body {
 @media (max-width: 768px) {
   .mobile-menu-btn {
       display: block;
+      color: white;
   }
 
   .nav-links {
@@ -1783,4 +1784,7 @@ body {
   color: #76ABAE;
   border-bottom: 2px solid #76ABAE;
   padding-bottom: 0.5rem;
+}
+.mobile-menu-button svg {
+  stroke: white; /* Adjusts the stroke color of Lucide icons */
 }
