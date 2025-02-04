@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - kalles</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+    body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        line-height: 1.5;
+        color: #1a1a1a;
+        background-color: #f5f5f5;
+    }</style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-content">
+            <!-- モバイルメニューボタン -->
+            <button class="mobile-menu-button" id="menuButton">
+              <i data-lucide="menu"></i>
+            </button>
+  
+            <!-- ロゴ -->
+            <div class="logo">
+                <a href="index.html">KALLES</a>
+            </div>
+  
+            <!-- デスクトップナビゲーション -->
+            <div class="desktop-nav">
+              <a href="index.html">ホーム</a>
+              <a href="contact.html">お問い合わせ</a>
+              <a href="privacy.html">プライバシー</a>
+              <a href="terms.html">利用規約</a>
+              <a href="index.html#aboutSection">私たちについて</a>
+            </div>
+  
+            <!-- アイコン -->
+            <div class="nav-icons">
+              <button class="cart-button">  
+                <a href="index.html#productSection"><i data-lucide="shopping-cart"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- モバイルメニュー -->
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-menu-content">
+            <a href="index.html">ホーム</a>
+            <a href="contact.html">お問い合わせ</a>
+            <a href="privacy.html">プライバシー</a>
+            <a href="terms.html">利用規約</a>
+            <a href="about.html">私たちについて</a>
+          </div>
+        </div>
+      </nav>
+  
+
+    <main class="container">
+        <div class="contact-page">
+            <h1>お問い合わせ</h1>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>連絡先情報</h2>
+                    
+                    <div class="info-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <h3>所在地</h3>
+                            <p>〒123-4567 東京都新宿区電子商取引1-2-3</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i data-lucide="phone"></i>
+                        <div>
+                            <h3>電話番号</h3>
+                            <p>03-1234-5678</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <h3>メールアドレス</h3>
+                            <p>support@kalles.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>メッセージを送信</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">件名</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">メッセージ本文</label>
+                            <textarea id="message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i data-lucide="send"></i>
+                            <span>送信する</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="container">
+            <div class="footer-grid">
+              <!-- ストア情報 -->
+              <div class="footer-column">
+                <h3>ストア情報</h3>
+                <div class="store-info">
+                  <div class="info-item">
+                    <i data-lucide="map-pin"></i>
+                    <p>〒123-4567 東京都渋谷区ファッションストリート1-2-3</p>
+                  </div>
+                  <div class="info-item">
+                    <i data-lucide="phone"></i>
+                    <p>03-1234-5678</p>
+                  </div>
+                  <div class="info-item">
+                    <i data-lucide="mail"></i>
+                    <p>contact@kalles.com</p>
+                  </div>
+                  <div class="info-item">
+                    <i data-lucide="clock"></i>
+                    <p>営業時間: 9:00 - 20:00（年中無休）</p>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- ヘルプ＆情報 -->
+              <div class="footer-column">
+                <h3>サポート</h3>
+                <ul>
+                  <li><a href="index.html#aboutSection">会社概要</a></li>
+                  <li><a href="contact.html">お問い合わせ</a></li>
+                  <li><a href="terms.html">利用規約</a></li>
+                  <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+              </div>
+      
+              <!-- クイックリンク -->
+              <div class="footer-column">
+                <h3>クイックリンク</h3>
+                <ul>
+                  <li><a href="index.html">ホーム</a></li>
+                  <li><a href="index.html#productSection">商品一覧</a></li>
+                </ul>
+              </div>
+      
+              <!-- ソーシャルメディア -->
+              <div class="footer-column">
+                <h3>ソーシャルメディア</h3>
+                <p>特別なオファーや新商品情報をフォローしてチェック</p>
+                <div class="social-links">
+                  <a href="#" class="social-icon"><i data-lucide="facebook"></i></a>
+                  <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
+                  <a href="#" class="social-icon"><i data-lucide="instagram"></i></a>
+                  <a href="#" class="social-icon"><i data-lucide="youtube"></i></a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- ボトムセクション -->
+            <div class="footer-bottom">
+              <p>© <span id="current-year"></span> Your Store. 全著作権所有。</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="main.js"></script>
+    <script src="main2.js"></script>
+    <script>
+        lucide.createIcons();
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Handle form submission
+            console.log('フォームが送信されました');
+        });
+    </script>
+</body>
+</html>
